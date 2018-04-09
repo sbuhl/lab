@@ -1,0 +1,16 @@
+.l-container{
+	width: 1170px;
+	margin:0 auto;
+	z-index:5;
+	position: relative;
+	@include clearfix;
+}
+
+.grid4{
+	width:25%;
+	float: left;
+}
+.grid3{
+	width:33.33%;
+	float: left;
+}

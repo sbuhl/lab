@@ -1,0 +1,40 @@
+.about{
+	@include clearfix;
+}
+
+.about-icon{
+	width: 125px;
+	height: 125px;
+	border:2px solid $color;
+	border-radius:125px;
+	text-align: center;
+	line-height: 125px;
+	float:left;
+	margin-right:30px;
+}
+
+.about-text{
+	width:505px;
+	float: left;
+
+}
+.about-alert{
+	font-size: 20px;
+	color:#E74C3C;
+	line-height: 28px;
+}
+.about-picture{
+	float:right;
+	width:450px;
+}
+
+.about-2{
+	.about-picture{
+		width: 515px;
+		float: left;
+	}
+	.about-text{
+		width: 600px;
+		float: right;
+	}
+}

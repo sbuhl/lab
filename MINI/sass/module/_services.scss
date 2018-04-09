@@ -1,0 +1,21 @@
+.services{
+	text-align: center;
+	h2{
+		padding: 20px 0;
+	}
+
+}
+.services-icon{
+	width: 125px;
+	display:block;
+	height: 125px;
+	border:2px solid $color;
+	border-radius:125px;
+	text-align: center;
+	line-height: 125px;
+	margin:auto;
+	&:hover{
+		background-color: $color;
+	}
+}
+

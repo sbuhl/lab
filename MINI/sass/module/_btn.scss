@@ -1,0 +1,23 @@
+.btn{
+	display: inline-block;
+	padding:0 40px;
+	font-size: 15px;
+	font-weight: bold;
+	text-transform: uppercase;
+	color:#000;
+	line-height: 40px;
+	background-color: transparent;
+	cursor: pointer;
+	background-color: rgba($color,0);
+	border:2px solid $color;
+	@include transition-duration;
+
+	&:hover{
+		border-color:$color;
+		background-color:$color;
+		color:#FFF;
+	}
+}
+.btn-small{
+	line-height: 34px;
+}

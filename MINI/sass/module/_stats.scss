@@ -1,0 +1,18 @@
+.stats-icon{
+	width: 125px;
+	height: 125px;
+	border:2px solid $color;
+	border-radius:125px;
+	text-align: center;
+	line-height: 125px;
+	margin:auto;
+}
+.stats-title{
+	color:#FFF;
+	font-size: 45px;
+	font-weight: bold;
+}
+.stats-title2{
+	@extend .stats-title;
+	font-size: 45px;
+}

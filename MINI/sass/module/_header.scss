@@ -1,0 +1,58 @@
+.header{
+	background:url(img/header.jpg) top center fixed;
+	color:#FFF;
+	text-align: center;
+	@include background-size(cover);
+	padding: 70px 0 300px 0;
+	.btn{
+ 		color: #FFF;
+ 		border-color:#FFF;		
+	}
+}
+.header-logo{
+	display:block;
+	float: left;
+}
+.header-baseline{
+	margin: 100px 0 60px 0;
+	font-weight: 300;
+	font-size: 45px;
+	text-transform: uppercase;
+	letter-spacing: -1px;
+}
+.header-baseline-l{
+	display: block;
+	line-height: 114px;
+}
+.header-baseline-l2{
+	font-weight: 700;
+	font-size: 66px;
+	line-height: 28px;
+}
+.header-baseline-l3{
+	font-size: 40px;
+	line-height: 100px;
+}
+/* -------------- *\
+	$MENU
+\* -------------- */
+.menu{
+	margin-top: 60px;
+	font-weight: 600;
+	font-size: 20px;
+	float: right;
+	text-align: right;
+}
+.menu-item{
+	@include transition-duration;
+	&:before{
+		content:'//';
+		display: inline-block;
+		padding: 0 37px;
+		color:#FFF;
+	}
+	&:first-child:before{
+		display: none;
+	}
+	&:hover, &.is-active{color:#000;}
+}

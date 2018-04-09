@@ -1,0 +1,79 @@
+@import url(http://fonts.googleapis.com/css?family=Lato:400,700italic);
+/* line 2, app.scss */
+* {
+  padding: 0;
+  margin: 0; }
+
+/* line 3, app.scss */
+body {
+  background: #1abc9c;
+  font-family: 'Lato', sans-serif;
+  text-transform: uppercase;
+  letter-spacing: 1px; }
+
+/* line 5, app.scss */
+header {
+  text-align: justify;
+  height: 8em;
+  padding: 2em 5%;
+  background: #2c3e50;
+  color: #fff; }
+
+/* line 13, app.scss */
+header::after {
+  content: '';
+  display: inline-block;
+  width: 100%; }
+
+/* line 19, app.scss */
+header > div,
+header > div::before,
+header nav,
+header > div h1 {
+  display: inline-block;
+  vertical-align: middle;
+  text-align: left; }
+
+/* line 28, app.scss */
+header > div {
+  height: 100%; }
+
+/* line 32, app.scss */
+header > div::before {
+  content: '';
+  height: 100%; }
+
+/* line 37, app.scss */
+header > div h1 {
+  font-size: 3em;
+  font-style: italic; }
+
+/* line 42, app.scss */
+header nav a {
+  padding: 0 0.6em;
+  white-space: nowrap; }
+
+/* line 47, app.scss */
+header nav a:last-child {
+  padding-right: 0; }
+
+@media screen and (max-width: 720px) {
+  /* line 53, app.scss */
+  header {
+    height: auto; }
+
+  /* line 57, app.scss */
+  header > div,
+  header > div h1,
+  header nav {
+    height: auto;
+    width: auto;
+    display: block;
+    text-align: center; } }
+/* line 67, app.scss */
+a {
+  color: #FFF;
+  text-decoration: none; }
+  /* line 70, app.scss */
+  a:hover {
+    text-decoration: underline; }

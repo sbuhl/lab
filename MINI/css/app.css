@@ -1,0 +1,857 @@
+@charset "UTF-8";
+/* Variables */
+/*Tools*/
+/* Base */
+/* line 1, ../sass/base/_base.scss */
+* {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+
+/* line 4, ../sass/base/_base.scss */
+body {
+  font-size: 16px;
+  font-family: "Open Sans", sans-serif;
+  line-height: 1.75;
+  color: #737373;
+  margin: 0;
+  padding: 0; }
+
+/* line 16, ../sass/tools/_mixins.scss */
+::-webkit-selection {
+  color: white;
+  background: #f39c12;
+  text-shadow: none; }
+
+/* line 16, ../sass/tools/_mixins.scss */
+::-moz-selection {
+  color: white;
+  background: #f39c12;
+  text-shadow: none; }
+
+/* line 16, ../sass/tools/_mixins.scss */
+::-ms-selection {
+  color: white;
+  background: #f39c12;
+  text-shadow: none; }
+
+/* line 16, ../sass/tools/_mixins.scss */
+::selection {
+  color: white;
+  background: #f39c12;
+  text-shadow: none; }
+
+/* line 13, ../sass/base/_base.scss */
+a {
+  color: inherit;
+  text-decoration: none; }
+
+/* line 17, ../sass/base/_base.scss */
+h2 {
+  font-size: 20px;
+  line-height: 1.25;
+  color: #000;
+  margin: 0 0 12px 0;
+  text-transform: uppercase; }
+
+/* line 24, ../sass/base/_base.scss */
+h3 {
+  text-align: center;
+  color: #0c0c0c;
+  font-size: 20px;
+  font-weight: 700;
+  text-transform: uppercase; }
+
+/* line 31, ../sass/base/_base.scss */
+h4 {
+  font-weight: normal; }
+  /* line 34, ../sass/base/_base.scss */
+  h4:after {
+    content: '';
+    display: block;
+    background-color: #cccccc;
+    width: 20px;
+    height: 4px;
+    position: absolute;
+    left: 136px; }
+
+/* line 44, ../sass/base/_base.scss */
+p, h4 {
+  padding: 0;
+  margin: 0;
+  margin-bottom: 20px; }
+
+/* line 49, ../sass/base/_base.scss */
+hr {
+  height: 2px;
+  border: none;
+  background-color: #E6E6E6;
+  margin: 115px 0;
+  padding: 0; }
+
+/* line 56, ../sass/base/_base.scss */
+strong {
+  font-weight: 700; }
+
+/* line 59, ../sass/base/_base.scss */
+.cb {
+  clear: both; }
+
+/* line 62, ../sass/base/_base.scss */
+blockquote {
+  margin: 0 0 45px;
+  padding: 0; }
+
+/* line 66, ../sass/base/_base.scss */
+.quote-text {
+  display: block;
+  width: 1170px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  padding: 0 55px;
+  font-size: 45px;
+  font-weight: bold;
+  line-height: 60px; }
+  /* line 76, ../sass/base/_base.scss */
+  .quote-text:before, .quote-text:after {
+    font-size: 60px;
+    width: 55px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    text-align: center; }
+  /* line 84, ../sass/base/_base.scss */
+  .quote-text:before {
+    content: '“'; }
+  /* line 86, ../sass/base/_base.scss */
+  .quote-text:after {
+    left: auto;
+    right: 0;
+    content: '“'; }
+
+/* line 92, ../sass/base/_base.scss */
+.quote-author {
+  font-size: 24px;
+  position: relative;
+  padding-top: 25px;
+  font-style: normal;
+  text-transform: uppercase; }
+  /* line 98, ../sass/base/_base.scss */
+  .quote-author:after {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    content: ' ';
+    display: block;
+    margin-left: -25px;
+    background-color: #f39c12;
+    width: 50px;
+    height: 4px; }
+
+/* line 112, ../sass/base/_base.scss */
+table {
+  width: 748px;
+  margin: auto;
+  border: 1px solid #e6e6e6; }
+
+/* line 117, ../sass/base/_base.scss */
+th {
+  color: #0c0c0c;
+  font-size: 22px;
+  font-weight: 700;
+  line-height: 2;
+  width: 73px;
+  height: 62px;
+  border: 1px solid #e6e6e6;
+  padding: 0 0;
+  margin: auto; }
+
+/* line 128, ../sass/base/_base.scss */
+td {
+  color: #737373;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 1.6;
+  width: 112px;
+  height: 15px;
+  border: 1px solid #e6e6e6;
+  padding: 0 0;
+  margin: auto; }
+
+/* line 1, ../sass/base/_form.scss */
+input, textarea, button {
+  outline: none;
+  -webkit-apparence: none;
+  border-radius: 0; }
+
+/* line 6, ../sass/base/_form.scss */
+.form-input, .form-textarea {
+  border: 2px solid #d9d9d9;
+  height: 45px;
+  width: 100%;
+  display: block;
+  margin: 0 0 10px 0;
+  padding: 0 30px;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+  color: #737373;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+  /* line 6, ../sass/tools/_mixins.scss */
+  .form-input ::-webkit-placeholder, .form-textarea ::-webkit-placeholder {
+    color: #d9d9d9; }
+  /* line 6, ../sass/tools/_mixins.scss */
+  .form-input ::-moz-placeholder, .form-textarea ::-moz-placeholder {
+    color: #d9d9d9; }
+  /* line 6, ../sass/tools/_mixins.scss */
+  .form-input ::-ms-placeholder, .form-textarea ::-ms-placeholder {
+    color: #d9d9d9; }
+  /* line 6, ../sass/tools/_mixins.scss */
+  .form-input ::placeholder, .form-textarea ::placeholder {
+    color: #d9d9d9; }
+  /* line 18, ../sass/base/_form.scss */
+  .form-input:focus, .form-textarea:focus {
+    border-color: #f39c12; }
+
+/* line 24, ../sass/base/_form.scss */
+.form-textarea {
+  height: 150px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+/* Layout */
+/* line 1, ../sass/layout/_grid.scss */
+.l-container {
+  width: 1170px;
+  margin: 0 auto;
+  z-index: 5;
+  position: relative;
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 9, ../sass/layout/_grid.scss */
+.grid4 {
+  width: 25%;
+  float: left; }
+
+/* line 13, ../sass/layout/_grid.scss */
+.grid3 {
+  width: 33.33%;
+  float: left; }
+
+/* Modules */
+/* line 1, ../sass/module/_header.scss */
+.header {
+  background: url(img/header.jpg) top center fixed;
+  color: #FFF;
+  text-align: center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  padding: 70px 0 300px 0; }
+  /* line 7, ../sass/module/_header.scss */
+  .header .btn {
+    color: #FFF;
+    border-color: #FFF; }
+
+/* line 12, ../sass/module/_header.scss */
+.header-logo {
+  display: block;
+  float: left; }
+
+/* line 16, ../sass/module/_header.scss */
+.header-baseline {
+  margin: 100px 0 60px 0;
+  font-weight: 300;
+  font-size: 45px;
+  text-transform: uppercase;
+  letter-spacing: -1px; }
+
+/* line 23, ../sass/module/_header.scss */
+.header-baseline-l {
+  display: block;
+  line-height: 114px; }
+
+/* line 27, ../sass/module/_header.scss */
+.header-baseline-l2 {
+  font-weight: 700;
+  font-size: 66px;
+  line-height: 28px; }
+
+/* line 32, ../sass/module/_header.scss */
+.header-baseline-l3 {
+  font-size: 40px;
+  line-height: 100px; }
+
+/* -------------- *\
+	$MENU
+\* -------------- */
+/* line 39, ../sass/module/_header.scss */
+.menu {
+  margin-top: 60px;
+  font-weight: 600;
+  font-size: 20px;
+  float: right;
+  text-align: right; }
+
+/* line 46, ../sass/module/_header.scss */
+.menu-item {
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+  /* line 48, ../sass/module/_header.scss */
+  .menu-item:before {
+    content: '//';
+    display: inline-block;
+    padding: 0 37px;
+    color: #FFF; }
+  /* line 54, ../sass/module/_header.scss */
+  .menu-item:first-child:before {
+    display: none; }
+  /* line 57, ../sass/module/_header.scss */
+  .menu-item:hover, .menu-item.is-active {
+    color: #000; }
+
+/* line 1, ../sass/module/_section.scss */
+.section {
+  padding: 85px 0;
+  background-color: #FFF;
+  position: relative; }
+  /* line 5, ../sass/module/_section.scss */
+  .section:before, .section:after {
+    content: '';
+    display: block;
+    background-color: #FFF;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 4;
+    -moz-transform-origin: 0 0;
+    -ms-transform-origin: 0 0;
+    -webkit-transform-origin: 0 0;
+    transform-origin: 0 0;
+    -moz-transform: skewY(-2deg);
+    -ms-transform: skewY(-2deg);
+    -webkit-transform: skewY(-2deg);
+    transform: skewY(-2deg); }
+  /* line 15, ../sass/module/_section.scss */
+  .section:after {
+    background-color: #FFF;
+    -moz-transform-origin: 100% 0;
+    -ms-transform-origin: 100% 0;
+    -webkit-transform-origin: 100% 0;
+    transform-origin: 100% 0; }
+
+/* line 22, ../sass/module/_section.scss */
+.section-title {
+  margin-bottom: 140px;
+  overflow: hidden;
+  *zoom: 1; }
+  /* line 25, ../sass/module/_section.scss */
+  .section-title h1 {
+    width: 200px;
+    margin: 5px 0 0 0;
+    padding: 0 20px 0 0;
+    float: left;
+    border-right: 4px solid #f39c12;
+    color: #000;
+    text-align: right;
+    text-transform: uppercase;
+    line-height: 45px; }
+  /* line 36, ../sass/module/_section.scss */
+  .section-title p, .section-title h4 {
+    width: 950px;
+    float: right;
+    margin: 0;
+    padding: 0;
+    text-transform: uppercase;
+    font-size: 16px; }
+
+/* line 47, ../sass/module/_section.scss */
+.background {
+  padding: 200px 0;
+  background: url(img/bg1.jpg) top center fixed;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  -webkit-background-size: cover;
+  background-size: cover;
+  text-align: center;
+  color: #FFF; }
+
+/* line 55, ../sass/module/_section.scss */
+.map {
+  position: relative; }
+  /* line 57, ../sass/module/_section.scss */
+  .map:after {
+    content: '';
+    display: block;
+    background-color: rgba(255, 255, 255, 0.2);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0; }
+
+/* line 1, ../sass/module/_footer.scss */
+.footer {
+  padding: 30px 0; }
+  /* line 3, ../sass/module/_footer.scss */
+  .footer:after {
+    display: none; }
+
+/* line 7, ../sass/module/_footer.scss */
+.footer-copy {
+  width: 50%;
+  float: left;
+  font-size: 14px;
+  font-weight: 600;
+  color: #d9D9D9;
+  text-transform: uppercase; }
+
+/* line 17, ../sass/module/_footer.scss */
+.footer-icon {
+  width: 50%;
+  float: right;
+  text-align: right; }
+  /* line 21, ../sass/module/_footer.scss */
+  .footer-icon a {
+    padding-right: 10px; }
+  /* line 25, ../sass/module/_footer.scss */
+  .footer-icon .fa {
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s;
+    font-size: 14px; }
+    /* line 30, ../sass/module/_footer.scss */
+    .footer-icon .fa:hover {
+      color: #f39c12; }
+
+/* line 1, ../sass/module/_btn.scss */
+.btn {
+  display: inline-block;
+  padding: 0 40px;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  color: #000;
+  line-height: 40px;
+  background-color: transparent;
+  cursor: pointer;
+  background-color: rgba(243, 156, 18, 0);
+  border: 2px solid #f39c12;
+  -moz-transition-duration: 0.4s;
+  -o-transition-duration: 0.4s;
+  -webkit-transition-duration: 0.4s;
+  transition-duration: 0.4s; }
+  /* line 15, ../sass/module/_btn.scss */
+  .btn:hover {
+    border-color: #f39c12;
+    background-color: #f39c12;
+    color: #FFF; }
+
+/* line 21, ../sass/module/_btn.scss */
+.btn-small {
+  line-height: 34px; }
+
+/* line 240, icon/*.png */
+.icon-sprite, .icon-awards, .icon-banknote, .icon-bulb, .icon-clients, .icon-coffee, .icon-contact-location, .icon-contact-mail, .icon-contact-phone, .icon-dribbble, .icon-facebook, .icon-google, .icon-lab, .icon-linkedin, .icon-location, .icon-mail, .icon-para, .icon-phone, .icon-pictures, .icon-pinterest, .icon-project, .icon-rss, .icon-star, .icon-twitter, .icon-twitter2, .icon-world {
+  background-image: url('/img/icon-sbac0d730b4.png');
+  background-repeat: no-repeat; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-awards {
+  background-position: 0 0;
+  height: 32px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-banknote {
+  background-position: 0 -32px;
+  height: 32px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-bulb {
+  background-position: 0 -64px;
+  height: 40px;
+  width: 28px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-clients {
+  background-position: 0 -104px;
+  height: 32px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-coffee {
+  background-position: 0 -136px;
+  height: 32px;
+  width: 28px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-contact-location {
+  background-position: 0 -168px;
+  height: 34px;
+  width: 34px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-contact-mail {
+  background-position: 0 -202px;
+  height: 34px;
+  width: 34px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-contact-phone {
+  background-position: 0 -236px;
+  height: 34px;
+  width: 34px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-dribbble {
+  background-position: 0 -270px;
+  height: 18px;
+  width: 18px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-facebook {
+  background-position: 0 -288px;
+  height: 18px;
+  width: 10px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-google {
+  background-position: 0 -306px;
+  height: 18px;
+  width: 18px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-lab {
+  background-position: 0 -324px;
+  height: 32px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-linkedin {
+  background-position: 0 -356px;
+  height: 18px;
+  width: 18px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-location {
+  background-position: 0 -374px;
+  height: 18px;
+  width: 12px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-mail {
+  background-position: 0 -392px;
+  height: 12px;
+  width: 16px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-para {
+  background-position: 0 -404px;
+  height: 32px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-phone {
+  background-position: 0 -436px;
+  height: 16px;
+  width: 16px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pictures {
+  background-position: 0 -452px;
+  height: 44px;
+  width: 44px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-pinterest {
+  background-position: 0 -496px;
+  height: 20px;
+  width: 16px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-project {
+  background-position: 0 -516px;
+  height: 28px;
+  width: 32px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-rss {
+  background-position: 0 -544px;
+  height: 15px;
+  width: 15px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-star {
+  background-position: 0 -559px;
+  height: 27px;
+  width: 28px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-twitter {
+  background-position: 0 -586px;
+  height: 15px;
+  width: 18px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-twitter2 {
+  background-position: 0 -601px;
+  height: 25px;
+  width: 30px; }
+
+/* line 84, ../../../../../Applications/CodeKit.app/Contents/Resources/engines/compass/compass-core/stylesheets/compass/utilities/sprites/_base.scss */
+.icon-world {
+  background-position: 0 -626px;
+  height: 29px;
+  width: 29px; }
+
+/* line 6, ../sass/module/_icons.scss */
+.icon {
+  display: inline-block;
+  vertical-align: middle; }
+
+/* line 1, ../sass/module/_about.scss */
+.about {
+  overflow: hidden;
+  *zoom: 1; }
+
+/* line 5, ../sass/module/_about.scss */
+.about-icon {
+  width: 125px;
+  height: 125px;
+  border: 2px solid #f39c12;
+  border-radius: 125px;
+  text-align: center;
+  line-height: 125px;
+  float: left;
+  margin-right: 30px; }
+
+/* line 16, ../sass/module/_about.scss */
+.about-text {
+  width: 505px;
+  float: left; }
+
+/* line 21, ../sass/module/_about.scss */
+.about-alert {
+  font-size: 20px;
+  color: #E74C3C;
+  line-height: 28px; }
+
+/* line 26, ../sass/module/_about.scss */
+.about-picture {
+  float: right;
+  width: 450px; }
+
+/* line 32, ../sass/module/_about.scss */
+.about-2 .about-picture {
+  width: 515px;
+  float: left; }
+/* line 36, ../sass/module/_about.scss */
+.about-2 .about-text {
+  width: 600px;
+  float: right; }
+
+/* line 1, ../sass/module/_progress.scss */
+.progress {
+  margin-bottom: 30px; }
+
+/* line 4, ../sass/module/_progress.scss */
+.progress-title {
+  line-height: 40px; }
+  /* line 6, ../sass/module/_progress.scss */
+  .progress-title strong {
+    color: #000; }
+
+/* line 9, ../sass/module/_progress.scss */
+.progress-bar {
+  height: 10px;
+  background-color: #E6E6E6;
+  position: relative; }
+  /* line 13, ../sass/module/_progress.scss */
+  .progress-bar span {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    background-color: #f39c12; }
+
+/* line 1, ../sass/module/_post.scss */
+.posts {
+  margin: 0 -30px; }
+
+/* line 4, ../sass/module/_post.scss */
+.post {
+  width: 555px;
+  height: 500px;
+  float: left;
+  position: relative;
+  margin: 30px; }
+
+/* line 11, ../sass/module/_post.scss */
+.post-thumb {
+  width: 55px;
+  height: 300px;
+  background-color: #f39c12;
+  display: block; }
+  /* line 16, ../sass/module/_post.scss */
+  .post-thumb img {
+    -moz-transition-duration: 0.4s;
+    -o-transition-duration: 0.4s;
+    -webkit-transition-duration: 0.4s;
+    transition-duration: 0.4s; }
+  /* line 20, ../sass/module/_post.scss */
+  .post-thumb:hover img {
+    opacity: 0.5; }
+
+/* line 23, ../sass/module/_post.scss */
+.post-content {
+  position: absolute;
+  top: 240px;
+  right: 0;
+  width: 445px;
+  padding: 20px;
+  text-align: justify;
+  background-color: #FFF; }
+
+/* line 31, ../sass/module/_post.scss */
+.post-icon {
+  width: 44px;
+  height: 44px;
+  background-color: #f39c12;
+  position: absolute;
+  right: 445px;
+  top: 254px;
+  line-height: 44px;
+  vertical-align: middle; }
+
+/* line 42, ../sass/module/_post.scss */
+.post-meta {
+  text-align: right;
+  padding-top: 20px;
+  font-size: 14px;
+  width: 92px; }
+
+/* line 1, ../sass/module/_contact.scss */
+.contact-form {
+  float: left;
+  width: 640px; }
+
+/* line 5, ../sass/module/_contact.scss */
+.contact-info {
+  float: right;
+  width: 485px; }
+
+/* line 10, ../sass/module/_contact.scss */
+.contact-list, .footer-icon .fa {
+  font-size: 16px;
+  margin: 0;
+  padding: 0;
+  color: #0D0D0D;
+  line-height: 43px; }
+  /* line 16, ../sass/module/_contact.scss */
+  .contact-list li, .footer-icon .fa li {
+    margin: 0;
+    padding: 0;
+    list-style: none; }
+  /* line 21, ../sass/module/_contact.scss */
+  .contact-list .icon, .footer-icon .fa .icon {
+    margin-right: 20px; }
+
+/* line 1, ../sass/module/_team.scss */
+.team {
+  width: 292px;
+  float: left;
+  padding: 15px;
+  position: relative; }
+  /* line 6, ../sass/module/_team.scss */
+  .team:hover {
+    background-color: #F0F0F0; }
+  /* line 9, ../sass/module/_team.scss */
+  .team p, .team h4 {
+    text-align: center; }
+
+/* line 14, ../sass/module/_team.scss */
+.team-ligne:hover:before {
+  content: '';
+  display: block;
+  background-color: #f39c12;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 0;
+  left: 0; }
+
+/* line 25, ../sass/module/_team.scss */
+.team-photo {
+  margin: auto;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  -webkit-border-radius: 50%;
+  -moz-border-radius: 50%;
+  background: url(../img/john.jpg);
+  background-size: 150px 150px;
+  border: 3px solid #cccccc;
+  background-size: cover; }
+
+/* line 37, ../sass/module/_team.scss */
+.team-social {
+  text-align: center; }
+  /* line 39, ../sass/module/_team.scss */
+  .team-social a {
+    margin: 0 8px; }
+    /* line 41, ../sass/module/_team.scss */
+    .team-social a:hover {
+      color: #f39c12; }
+
+/* line 1, ../sass/module/_stats.scss */
+.stats-icon {
+  width: 125px;
+  height: 125px;
+  border: 2px solid #f39c12;
+  border-radius: 125px;
+  text-align: center;
+  line-height: 125px;
+  margin: auto; }
+
+/* line 10, ../sass/module/_stats.scss */
+.stats-title, .stats-title2 {
+  color: #FFF;
+  font-size: 45px;
+  font-weight: bold; }
+
+/* line 15, ../sass/module/_stats.scss */
+.stats-title2 {
+  font-size: 45px; }
+
+/* line 1, ../sass/module/_services.scss */
+.services {
+  text-align: center; }
+  /* line 3, ../sass/module/_services.scss */
+  .services h2 {
+    padding: 20px 0; }
+
+/* line 8, ../sass/module/_services.scss */
+.services-icon {
+  width: 125px;
+  display: block;
+  height: 125px;
+  border: 2px solid #f39c12;
+  border-radius: 125px;
+  text-align: center;
+  line-height: 125px;
+  margin: auto; }
+  /* line 17, ../sass/module/_services.scss */
+  .services-icon:hover {
+    background-color: #f39c12; }

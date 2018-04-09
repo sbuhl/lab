@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>Vidéo en background</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<!-- [if lt IE 9]>
+	<script> document.createElement('video');</script>
+	<![endif]-->
+</head>
+<body>
+	<video autoplay loop poster="polina.jpg" id=bgvid>
+		<source src="polina.webm" type="video/webm">
+		<source src="polina.mp4" type="video/mp4">
+	</video>
+	<section id="polina">
+		<h1>Polina</h1>
+		<p>filmed by Alexander Wagner 2011</p>
+		<p><a href="#">Return to article</a></p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+		tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+		quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+		consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+		cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+		proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+		<button id="vidpause">Pause</button>
+
+	</section>
+
+	<script type="text/javascript">
+		var vid = document.getElementById("bgvid");
+var pauseButton = document.getElementById("vidpause");
+function vidFade() {
+vid.classList.add("stopfade");
+}
+vid.addEventListener('ended', function() {
+// only functional if "loop" is removed
+vid.pause();
+// to capture IE10
+vidFade();
+});
+pauseButton.addEventListener("click", function() {
+vid.classList.toggle("stopfade");
+if (vid.paused) {
+vid.play();
+pauseButton.innerHTML = "Pause";
+} else {
+vid.pause();
+pauseButton.innerHTML = "Paused";
+}
+})
+	</script>
+</body>
+</html>
